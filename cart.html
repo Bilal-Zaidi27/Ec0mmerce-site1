@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eflyer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="hamburger-menu" onclick="toggleMenu()">&#9776;</a>
+
+            <div class="top-nav">
+                <a href="home.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="category.html">Category</a>
+                <a href="cart.html">Cart</a>
+              
+             
+</div>
+            
+        </nav>
+         
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="category.html">Category</a>
+            <a href="cart.html">Cart</a>
+            
+        </div>
+     <div class="hearder-site-logo"> 
+            <div class="header-row">
+                    
+          <div class="header-col-1">
+         
+    </div>
+                
+          <div class="header-col-2">     
+            <h2 class="brand-logo1">Eflyer</h2>
+        </div>
+
+        <div class="header-col-3">
+            <a href="cart.html">Cart <i class="fa fa-shopping-cart"></i></a>
+            <a href="#">Login<i class="fa fa-user"></i></a>
+          </div>
+        </div>
+    </div>
+        <div class="hero">
+            <img src="assets/images/cover banner.png" alt="Hero Image" class="hero-img">
+            <div class="hero-content">
+                <h1>GET START YOUR <br> FAVORITE SHOPPING</h1>
+                <a href="#" class="hero-button">Buy Now</a>
+                <h2 class="banner-head">Man & Woman Fashion</h2>
+            </div>
+        </div>
+    </header>
+
+<!-- Cart Sidebar -->
+<aside id="cart-sidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div class="cart-items">
+        <!-- Cart items will be dynamically rendered here -->
+    </div>
+    <p>Total Price: <span id="cart-total-price">$0.00</span></p>
+    <button onclick="window.location.href='/cart.html'">View Cart</button>
+</aside>
+
+
+
+
+<div id="cart-container"></div>
+<div id="total-price-container"></div>
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+        <div class="cart-items"></div>
+        <div class="cart-summary">
+          <!-- <p>Total: <span id="total-price">$0.00</span></p> -->
+          <button id="checkout-button">Checkout</button>
+        </div>
+      </div>
+
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="fot-col-1">
+                <h2 class="footer-logo"><span class="name-style">E</span>flyer</h2>
+                <input type="email" placeholder="Your Mail">
+                <button class="footer-btn" type="button">Submit</button>
+               <div>
+                <label for="Submit">Best Sellers</label>
+                <label for="Submit">Great Ideas</label>
+                <label for="Submit">New Arrivals</label>
+                <label for="Submit">Best Gifts</label>
+    
+               </div>
+               <p class="footer-para"><span class="name-style">Helpline : </span>+321 3232 42431</p>
+            </div>
+            <div class="fot-col-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14480.63368750711!2d67.0603916!3d24.8584383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f61f7ff7ffb%3A0x4a327d1cb63b0875!2sSolCoders!5e0!3m2!1sen!2s!4v1726487202664!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    
+        <div class="footer-last-line">
+             @2024 All Rights Reserved Designed by <span class="name-style">Bilal Zaidi</span>
+        </div>
+       </section>
+
+
+       <script src="cart.js"></script>
+       <script src="AddToCart.js"></script>
+       </body>
+       </html>

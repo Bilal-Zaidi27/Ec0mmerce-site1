@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eflyer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="hamburger-menu" onclick="toggleMenu()">&#9776;</a>
+
+            <div class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="category.html">Category</a>
+                <a href="cart.html">Cart</a>
+            
+</div>
+            
+        </nav>
+         
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" class="close-menu" onclick="toggleMenu()">&#10005;</a>
+            <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="category.html">Category</a>
+                <a href="cart.html">Cart <i class="fa fa-shopping-cart">&nbsp;&nbsp;</i></a>
+                <a href="#">Login<i class="fa fa-user">&nbsp;&nbsp;</i></a>
+
+        
+            
+         
+            </div>
+        </div>
+        <!-- <a href="#" class="hamburger-menu" onclick="toggleMenu()">&#9776;</a> -->
+        <h2 class="main-logo">Eflyer </h2>
+     <div class="hearder-site-logo"> 
+            <div class="header-row">
+                    
+          <div class="header-col-1">
+
+        
+    </div>
+                
+          <div class="header-col-2">     
+            <h2 class="brand-logo1">Eflyer</h2>
+        </div>
+  
+        <div class="header-col-3">
+            <a href="#">Cart <i class="fa fa-shopping-cart"></i></a>
+            <a href="#">Login<i class="fa fa-user"></i></a>
+          </div>
+      
+        </div>
+    </div>
+        <div class="hero">
+            <img src="assets/images/cover banner.png" alt="Hero Image" class="hero-img">
+            <div class="hero-content">
+                <h1>GET START YOUR <br> FAVORITE SHOPPING</h1>
+                <a href="category.html" class="hero-button">Buy Now</a>
+                <h2 class="banner-head">Man & Woman Fashion</h2>
+            </div>
+        </div>
+    
+        <!-- Product Grid -->
+        <div id="product-grid" class="product-grid"></div>
+    
+    
+        <!-- Cart Sidebar (Optional) -->
+        <div id="cart-sidebar" class="cart-items"></div> </header>
+  
+ 
+    <section class="product-sec">
+        <div class="product-row">
+            <div class="product-col">
+             <p class="prdct-name">Man's T-shirt</p>
+             <h3 class="prdct-price">
+                Price <span class="price-styling">$30</span>
+             </h3>
+             <img class="product-image" src="assets/images/polo-shirt-png-free-download-13.png" alt="">
+             <div class="buttons">
+                <button type="button" class="prdct-btn"> <a href="/shop.html">Buy Now</a>  </button>
+                <button type="button" class="prdct-btn-2"> <a href="/category.html">See More</a></button>
+        </div>
+            </div>
+            <div class="product-col">
+                <p class="prdct-name">Dress shirt</p>
+                <h3 class="prdct-price">
+                   Price <span class="price-styling">$40</span>
+                </h3>
+                <img class="product-image" src="assets/images/dress_shirt_PNG8083.png" alt="">
+                <div class="buttons">
+                    <button type="button" class="prdct-btn"> <a href="/shop.html">Buy Now</a>  </button>
+                    <button type="button" class="prdct-btn-2"> <a href="/category.html">See More</a></button>
+            </div>
+            </div>
+            <div class="product-col">
+                <p class="prdct-name">Woman scarts</p>
+                <h3 class="prdct-price">
+                   Price <span class="price-styling">$50</span>
+                </h3>
+                <img class="product-image" src="assets/images/women-clothes-png-1.png" alt="">
+                <div>
+                    <div class="buttons">
+                        <button type="button" class="prdct-btn"> <a href="shop.html">Buy Now</a>  </button>
+                        <button type="button" class="prdct-btn-2"> <a href="category.html">See More</a></button>
+                </div>
+            </div>
+          
+        </div>
+        <div class="prdct-arrows">
+            <i class="fa fa-arrow-left"></i>
+            <i class="fa fa-arrow-right"></i>
+           
+       </div>
+    </section>
+
+    <section class="product-sec">
+        <h2 class="electro-head">Electronics</h2>
+        <div class="product-row">
+            <div class="product-col">
+             <p class="prdct-name">Laptop</p>
+             <h3 class="prdct-price">
+                Price <span class="price-styling">$220</span>
+             </h3>
+             <img class="product-image" src="assets/images/unnamed (1).png" alt="">
+             <div class="buttons">
+                <button type="button" class="prdct-btn"> <a href="shop.html">Buy Now</a>  </button>
+                <button type="button" class="prdct-btn-2"> <a href="category.html">See More</a></button>
+        </div>
+            </div>
+            <div class="product-col">
+                <p class="prdct-name">Mobile</p>
+                <h3 class="prdct-price">
+                   Price <span class="price-styling">$300</span>
+                </h3>
+                <img class="product-image" src="assets/images/unnamed (2).png" alt="">
+                <div class="buttons">
+                    <button type="button" class="prdct-btn"> <a href="shop.html">Buy Now</a>  </button>
+                    <button type="button" class="prdct-btn-2"> <a href="category.html">See More</a></button>
+            </div>
+            </div>
+            <div class="product-col">
+                <p class="prdct-name">Computers</p>
+                <h3 class="prdct-price">
+                   Price <span class="price-styling">$30</span>
+                </h3>
+                <img class="product-image" src="assets/images/32741-5-gaming-computer-image-thumb.png" alt="">
+                <div class="buttons">
+                    <button type="button" class="prdct-btn"> <a href="shop.html">Buy Now</a>  </button>
+                    <button type="button" class="prdct-btn-2"> <a href="category.html">See More</a></button>
+            </div>
+            </div>
+        </div>
+        <div class="prdct-arrows">
+            <i class="fa fa-arrow-left"></i>
+            <i class="fa fa-arrow-right"></i>
+           
+       </div>
+    </section>
+
+
+
+    <section class="product-sec">
+        <h2 class="jew-head">Jewellry Accesories</h2>
+        <div class="product-row">
+            <div class="product-col">
+             <p class="prdct-name">Jhumkas</p>
+             <h3 class="prdct-price">
+                Price <span class="price-styling">$30</span>
+             </h3>
+             <img class="product-image" src="assets/images/hemita-nimah-gold-jhumka.png" alt="">
+                <div class="buttons">
+                    <button type="button" class="prdct-btn"> <a href="shop.html">Buy Now</a>  </button>
+                    <button type="button" class="prdct-btn-2"> <a href="category.html">See More</a></button>
+            </div>
+            </div>
+            <div class="product-col">
+                <p class="prdct-name">Necklace</p>
+                <h3 class="prdct-price">
+                   Price <span class="price-styling">$130</span>
+                </h3>
+                <img class="product-image" src="assets/images/GSS06660536_364.png" alt="">
+                <div class="buttons">
+                    <button type="button" class="prdct-btn"> <a href="shop.html">Buy Now</a>  </button>
+                    <button type="button" class="prdct-btn-2"> <a href="category.html">See More</a></button>
+            </div>
+            </div>
+            <div class="product-col">
+                <p class="prdct-name">Kangans</p>
+                <h3 class="prdct-price">
+                   Price <span class="price-styling">$50</span>
+                </h3>
+                <img class="product-image" src="assets/images/img_1206.png" alt="">
+                <div class="buttons">
+                    <button type="button" class="prdct-btn"> <a href="shop.html">Buy Now</a>  </button>
+                    <button type="button" class="prdct-btn-2"> <a href="category.html">See More</a></button>
+            </div>
+            </div>
+        </div>
+        <div class="prdct-arrows">
+            <i class="fa fa-arrow-left"></i>
+            <i class="fa fa-arrow-right"></i>
+           
+       </div>
+    </section> 
+
+
+   <section class="footer">
+    <div class="footer-row">
+        <div class="fot-col-1">
+            <h2 class="footer-logo"><span class="name-style">E</span>flyer</h2>
+            <input type="email" placeholder="Your Mail">
+            <button class="footer-btn" type="button">Submit</button>
+           <div>
+            <label for="Submit">Best Sellers</label>
+            <label for="Submit">Great Ideas</label>
+            <label for="Submit">New Arrivals</label>
+            <label for="Submit">Best Gifts</label>
+
+           </div>
+           <p class="footer-para"><span class="name-style">Helpline : </span>+321 3232 42431</p>
+        </div>
+        <div class="fot-col-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14480.63368750711!2d67.0603916!3d24.8584383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f61f7ff7ffb%3A0x4a327d1cb63b0875!2sSolCoders!5e0!3m2!1sen!2s!4v1726487202664!5m2!1sen!2s" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="footer-last-line">
+         @2024 All Rights Reserved Designed by <span class="name-style">Bilal Zaidi</span>
+    </div>
+   </section>
+
+
+
+
+    <script src="index.js"></script>
+    <script src="shop.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>

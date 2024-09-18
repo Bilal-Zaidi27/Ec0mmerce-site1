@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    font-family: "Arial", sans-serif;
+    color: #333;
+  }
+  
+  #preloader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: #333;
+  }
+  
+  #title {
+    font-size: 2.5rem;
+    text-align: start;
+    margin: 2rem 0;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image img {
+    width: 100%;
+    height: 350px;
+    max-width: 350px;
+    border-radius: 10px;
+  }
+  
+  .image img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  
+  .describe {
+    flex: 1;
+    margin-left: 2rem;
+  }
+  
+  .describe p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #666;
+  }
+  
+  .describe h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #333;
+    text-align: inherit;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.buy-now {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+  }
+  
+  button.buy-now:hover {
+    background-color: #f39c12;
+  }
+  
+  button.add-to-cart {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+  }
+  
+  button.add-to-cart:hover {
+    background-color: #e67e22;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Add these styles to desstyle.css */
+  .reviews-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .reviews-container h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  #reviews {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .review {
+    margin: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: center;
+    line-height: 25px;
+  }
+  
+  .review p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .review strong {
+    display: block;
+    font-size: 1.1rem;
+  }
+  .review:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  /* Style for the form  */
+  .review-form {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .review-form input[type="text"],
+  .review-form select,
+  .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .review-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .review-form input:focus,
+  .review-form select:focus,
+  .review-form textarea:focus {
+    border-color: #555;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-form .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .review-form .submit-btn:hover {
+    background-color: #218838;
+  }
+  /* Star rating styles */
+  .stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .stars .fa-star {
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.2s;
+  }
+  
+  .stars .fa-star.checked {
+    color: gold;
+  }
+  
+  .stars .fa-star:hover,
+  .stars .fa-star.active {
+    color: gold;
+  }
+  
+  /* Next Prev button  */
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    /* margin-top: -30px; */
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    float: right;
+    margin-top: 5rem;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    margin-top: 5rem;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  
